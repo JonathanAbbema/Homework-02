@@ -1,31 +1,44 @@
- header {
+body {
 
-    display:flex;
-    background: rgb(46, 26, 224);
-    flex-direction: row;
-    font-family: 'Times New Roman', Times, serif;
-    flex-wrap: wrap;
-    
+    background-color: lightgray;
 }
 
-h1 {
+header {
+    background: black;
+    font-family: 'Times New Roman', Times, serif;
+    outline-style: double;
+   outline-width:2px;
+   outline-color: aqua;
 
-    background: rgb(72, 192, 240);
-    margin-left: 10px;
+ }
+ 
+    nav{
+        display:flex;
+        text-align: right;
+        justify-content: space-around;
+        background-color: slategrey;
+    }
+
+h1 {
+    color: aqua;
+    margin: 6px;
+    padding: 8px;
     font-size: 30px;
+    text-align: left;
+    display:inline-flex;
+    background-color:slategrey
+
 
 }
 
 li {
-    position: absolute;
-    display: block;
+    display: inline-flex;
+    justify-content: space-between ;
+    margin:auto;
+    line-height: 1.2;
     text-align: right;
-    color: red;
-    margin-right: 10px;
+    color:aqua;
 
-    
+
 }
 
-body {
-    background: rgba(53, 53, 109, 0.527);
-}
