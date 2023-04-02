@@ -1,6 +1,6 @@
 body {
 
-    background-color: lightgray;
+    background-color: darkgray;
 }
 
 header {
@@ -18,12 +18,15 @@ header {
 }
 
 .imgContainer{
-    max-width: fit-content;
-    max-height: fit-content;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
     gap: 25px;
-    margin-left: 250px;
+    border: solid rgb(47, 255, 0) 10px;
+    width: 900px;
+    height: 1500px;
 
 }
 
@@ -57,9 +60,9 @@ margin-bottom: 3px;
 .section1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: row;
-    gap: 50px;
+    justify-content: start;
+    gap: 150px;
+    border: solid rgb(255, 0, 0) 3px;
 }
 
 .h2-style {
@@ -70,12 +73,19 @@ margin-bottom: 3px;
     outline-width: 5px;
     outline-color: aqua;
     display: inline-flex;
+    flex-wrap: wrap;
     
 }
- p { display: flex;
-    text-align: center;
+ p { display: inline-flex;
+    align-items: start;
     font-size: 15px;
     word-wrap: break-word;
+    margin-top: 30px;
+    color: aqua;
+    background: black;
+    border: solid aqua 3px;
+    height: 25px;
+   
 }
 
 .figure {
@@ -90,18 +100,6 @@ margin-bottom: 3px;
     justify-content: right;
     gap: 5px;
 }
-.card1{ /* 
-   flex-grow: 2;
-   flex-shrink: 1;
-   flex-basis: 5%;
-   */
-}
-
-.card2{ /*
-   height: 125px;
-   width: 125px;
-   */
- }
 
 
 .header-locator {
@@ -112,46 +110,51 @@ margin-bottom: 3px;
 }
 
 .flexbox-container {
-height: 1000px;
-width: 1880px;
+width: auto;
+height: auto;
 display: flex;
 flex-wrap: wrap;
-justify-content: start;
+justify-content: space-between;
 align-items: center;
+border: solid aqua 3px;
 }
 
 
 .flexbox-img1{
     background-image: url(./assets/placeholder1.jpg);
-    width: 400px;
+    width: 900px;
     height: 600px;
-    outline: solid aqua 12px;
+    outline: solid aqua 5px;
 }
 
 .flexbox-img2{
 
     background-image: url(./assets/placeholder2.jpg);
-    width: 200px;
-    height: 400px;
+    width: 250px;
+    height: 125px;
+    outline: solid aqua 5px;
 }
 
 .flexbox-img3{
 
     background-image: url(./assets/placeholder3.jpg);
-    width: 200px;
-    height: 400px;
+    width: 250px;
+    height: 125px;
+    outline: solid aqua 5px;
 }
 .flexbox-img4{
 
     background-image: url(./assets/placeholder4.jpg);
-    width: 200px;
-    height: 400px;
+    width: 250px;
+    height: 125px;
+    outline: solid aqua 5px;
 }
 .flexbox-img5{
 
-    background-image: url(./assets/placeholder2.jpg);
-    width: 200px;
-    height: 400px;
+    background-image: url(./assets/placeholder5.jpg);
+    width: 250px;
+    height: 125px;
+    outline: solid aqua 5px;
 }
 
 .imgCaption{
@@ -159,4 +162,22 @@ align-items: center;
     color: aqua;
     background-color: black;
     text-align: center;
+   
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+@media screen and (max-width: 792px) {
+
+    .flexbox-img1{
+        width: 400px;
+        height: 600px;
+    }
+    .flexbox-img2 .flexbox-img3 .flexbox-img4 .flexbox-img5 {
+        width:100px;
+        height:200px;
+    }
+
 }
