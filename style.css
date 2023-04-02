@@ -17,6 +17,16 @@ header {
     justify-content: space-between;
 }
 
+.imgContainer{
+    max-width: fit-content;
+    max-height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-left: 250px;
+
+}
+
  h1 {
     color: aqua;
     margin: 6px;
@@ -45,9 +55,9 @@ margin-bottom: 3px;
 }
 
 .section1 {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     gap: 50px;
 }
@@ -59,6 +69,8 @@ margin-bottom: 3px;
     outline-style: double;
     outline-width: 5px;
     outline-color: aqua;
+    display: inline-flex;
+    
 }
  p { display: flex;
     text-align: center;
@@ -78,15 +90,17 @@ margin-bottom: 3px;
     justify-content: right;
     gap: 5px;
 }
-.card1{
+.card1{ /* 
    flex-grow: 2;
    flex-shrink: 1;
    flex-basis: 5%;
+   */
 }
 
-.card2{
+.card2{ /*
    height: 125px;
    width: 125px;
+   */
  }
 
 
@@ -95,4 +109,54 @@ margin-bottom: 3px;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
+}
+
+.flexbox-container {
+height: 1000px;
+width: 1880px;
+display: flex;
+flex-wrap: wrap;
+justify-content: start;
+align-items: center;
+}
+
+
+.flexbox-img1{
+    background-image: url(./assets/placeholder1.jpg);
+    width: 400px;
+    height: 600px;
+    outline: solid aqua 12px;
+}
+
+.flexbox-img2{
+
+    background-image: url(./assets/placeholder2.jpg);
+    width: 200px;
+    height: 400px;
+}
+
+.flexbox-img3{
+
+    background-image: url(./assets/placeholder3.jpg);
+    width: 200px;
+    height: 400px;
+}
+.flexbox-img4{
+
+    background-image: url(./assets/placeholder4.jpg);
+    width: 200px;
+    height: 400px;
+}
+.flexbox-img5{
+
+    background-image: url(./assets/placeholder2.jpg);
+    width: 200px;
+    height: 400px;
+}
+
+.imgCaption{
+    font-size: 25px;
+    color: aqua;
+    background-color: black;
+    text-align: center;
 }
