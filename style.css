@@ -9,36 +9,90 @@ header {
     outline-style: double;
    outline-width:2px;
    outline-color: aqua;
-
  }
- 
-    nav{
-        display:flex;
-        text-align: right;
-        justify-content: space-around;
-        background-color: slategrey;
-    }
 
-h1 {
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ h1 {
     color: aqua;
     margin: 6px;
     padding: 8px;
     font-size: 30px;
-    text-align: left;
-    display:inline-flex;
-    background-color:slategrey
+}
+ .container nav {
+    
+        margin: 20px 20px;
+        font-size: 25px;
+        justify-content: space-between;
 
+    }
+.container nav a {
+    color: aqua;
+    margin: 2rem;
+}
+
+
+.bkgrdimg {
+background-image: url(./assets/backGround.jpg);
+height: 145px;
+width: 100%;
+margin-bottom: 3px;
 
 }
 
-li {
+.section1 {
     display: inline-flex;
-    justify-content: space-between ;
-    margin:auto;
-    line-height: 1.2;
-    text-align: right;
-    color:aqua;
-
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 50px;
 }
 
+.h2-style {
+    font-size: 35px;
+    color: aqua;
+    background-color: black;
+    outline-style: double;
+    outline-width: 5px;
+    outline-color: aqua;
+}
+ p { display: flex;
+    text-align: center;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+.figure {
+    display:flex;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.work{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 5px;
+}
+.card1{
+   flex-grow: 2;
+   flex-shrink: 1;
+   flex-basis: 5%;
+}
+
+.card2{
+   height: 125px;
+   width: 125px;
+ }
+
+
+.header-locator {
+
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
