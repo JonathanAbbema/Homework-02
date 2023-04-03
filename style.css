@@ -19,14 +19,14 @@ header {
 
 .imgContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    gap: 25px;
-    border: solid rgb(47, 255, 0) 10px;
+    gap: 10px;
     width: 900px;
     height: 1500px;
+    flex-shrink: 1;
 
 }
 
@@ -36,7 +36,7 @@ header {
     padding: 8px;
     font-size: 30px;
 }
- .container nav {
+.container nav {
     
         margin: 20px 20px;
         font-size: 25px;
@@ -62,7 +62,6 @@ margin-bottom: 3px;
     flex-wrap: wrap;
     justify-content: start;
     gap: 150px;
-    border: solid rgb(255, 0, 0) 3px;
 }
 
 .h2-style {
@@ -79,7 +78,6 @@ margin-bottom: 3px;
  p { display: inline-flex;
     align-items: start;
     font-size: 15px;
-    word-wrap: break-word;
     margin-top: 30px;
     color: aqua;
     background: black;
@@ -116,7 +114,6 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
 align-items: center;
-border: solid aqua 3px;
 }
 
 
@@ -130,30 +127,30 @@ border: solid aqua 3px;
 .flexbox-img2{
 
     background-image: url(./assets/placeholder2.jpg);
-    width: 250px;
-    height: 125px;
+    width: 350px;
+    height: 200px;
     outline: solid aqua 5px;
 }
 
 .flexbox-img3{
 
     background-image: url(./assets/placeholder3.jpg);
-    width: 250px;
-    height: 125px;
+    width: 350px;
+    height: 200px;
     outline: solid aqua 5px;
 }
 .flexbox-img4{
 
     background-image: url(./assets/placeholder4.jpg);
-    width: 250px;
-    height: 125px;
+    width: 350px;
+    height: 200px;
     outline: solid aqua 5px;
 }
 .flexbox-img5{
 
     background-image: url(./assets/placeholder5.jpg);
-    width: 250px;
-    height: 125px;
+    width: 350px;
+    height: 200px;
     outline: solid aqua 5px;
 }
 
@@ -165,19 +162,37 @@ border: solid aqua 3px;
    
 }
 
-.justify-end {
-    justify-content: end;
+.liFlexbox {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: fit-content;
+
 }
+.liStyle {
+    background: black;
+    padding: 3px;
+    color: aqua;
+    margin-right:35px;
+    font-size: 25px;
+    outline: solid aqua 3px;
+
+
+}
+
+
 
 @media screen and (max-width: 792px) {
 
-    .flexbox-img1{
-        width: 400px;
-        height: 600px;
-    }
-    .flexbox-img2 .flexbox-img3 .flexbox-img4 .flexbox-img5 {
-        width:100px;
-        height:200px;
-    }
+   .flexbox-img2 .flexbox-img3 .flexbox-img4 .flexbox-img5 {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+   } 
+   .flexbox-img1 {
+    flex-shrink: 0;
+    flex-basis: auto
+   }
 
 }
